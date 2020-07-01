@@ -13,7 +13,3 @@ def test_other():
     response = tester.get('a', content_type='html/text')
     assert response.status_code == 404
     assert b'does not exist' in response.data
-
-
-if __name__ == '__main__':
-    unittest.main()
