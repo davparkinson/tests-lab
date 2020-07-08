@@ -10,7 +10,7 @@ def home():
 
 @app.route('/<page_name>')
 def other_page(page_name):
-    response = make_response('ERROR: The page named %s does not exist.'
+    response = make_response('The page named %s does not exist.'
                              % page_name, 404)
     return response
 
