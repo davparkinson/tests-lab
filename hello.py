@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello Guys!\n"
+    return "Hello World!\n"
 
 
 @app.route('/<page_name>')
